@@ -44,7 +44,7 @@ df = load_dataset()
 
 # --- App UI ---
 st.title("📄 Multilingual Paragraph Search")
-st.markdown("Search through multilingual technical documents.")
+st.markdown("Search through multilingual technical documents, havng 2 column layout.")
 
 query = st.text_input("Enter search query (at least 6 words):")
 # translate_toggle = st.checkbox("🔁 Include translated paragraph (optional)", value=False)
