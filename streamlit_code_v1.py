@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from googletrans import Translator
 
 # --- Config ---
-PKL_FILE = "paragraphs_with_embeddings.pkl"
+PKL_FILE = "paragraphs_with_embeddings_v2.pkl"
 MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 SIMILARITY_THRESHOLD = 0.4
 TOP_K = 30
@@ -76,7 +76,8 @@ def filter_best_per_language(df_results, original_query):
     return pd.DataFrame(filtered_rows)
 
 # --- Streamlit UI ---
-st.title("🔍 Multilingual PDF Paragraph Search")
+st.title("🔍 Multilingual Paragraph Search")
+st.subheader("Built for pdf content in 2 Column layout")
 
 query = st.text_input("Enter a detailed query (minimum 5 words):")
 
